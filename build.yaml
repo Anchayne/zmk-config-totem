@@ -1,8 +1,6 @@
 include:
-  - board: xiao_ble
+  - board: xiao_ble@zmk
     shield: totem_left
-    varient: zmk
-  - board: xiao_ble
+  - board: xiao_ble@zmk
     shield: totem_right
-    varient: zmk
 # there is no settingsreset (needed) for the XIAO
