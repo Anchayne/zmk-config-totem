@@ -1,9 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 
-#define BASE 0 
+#define BASE 0
 #define NAV  1
 #define SYM  2
 #define ADJ  3
@@ -52,43 +50,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
-            label = "BASE";
+        alpha {
             bindings = <
-        &kp Q  &kp U  &kp K   &kp B      &kp Z       &kp J     &kp C      &kp W   &kp R  &trans
-        &kp A  &kp I  &kp O   &kp N      &kp F       &kp G     &kp S      &kp T   &kp H  &kp E
-&trans  &kp X  &kp Y  &kp D   &kp P      &trans      &trans    &kp V      &kp M   &kp L  &trans  &trans
-                      &trans  &kp SPACE  &kp BSPC    &kp BSPC  &kp SPACE  &trans
+        &kp Q  &kp U  &kp K    &kp F      &kp Z           &kp J           &kp C        &kp W      &kp L  &kp SQT
+        &kp A  &kp I  &kp O    &kp N      &kp B           &kp V           &kp S        &kp T      &kp H  &kp E
+&trans  &kp X  &kp Y  &kp D    &kp P      &trans          &trans          &kp G        &kp M      &kp R  &trans   &trans
+                      &kp TAB  &kp SPACE  &kp LC(BSPC)    &kp LEFT_SHIFT  &key_repeat  &kp ENTER
             >;
         };
 
-        nav_layer {
-            label = "NAV";
+        Nav {
             bindings = <
-        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6    &kp F7    &kp F8  &kp F9  &kp F10
-        &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans
-                        &trans  &trans  &tog NAV  &tog NAV  &trans    &trans
-            >;
-        };
-
-        sym_layer {
-            label = "SYM";
-            bindings = <
-        &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR
-        &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-&trans  &trans    &trans  &trans    &trans    &trans       &trans     &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &trans
-                          &trans    &trans    &trans       &trans     &trans     &trans
-            >;
-        };
-
-        adj_layer {
-            label = "ADJ";
-            bindings = <
-        &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &trans  &trans  &trans  &trans  &trans
-        &out OUT_TOG  &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans          &trans  &trans  &trans
+        &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &trans  &trans    &trans  &trans    &trans  &trans     &trans
+        &trans  &trans           &trans           &trans  &trans    &trans  &kp LEFT  &kp UP  &kp RIGHT  &kp DOWN
+&trans  &trans  &trans           &trans           &trans  &trans    &trans  &trans    &trans  &trans     &trans    &trans
+                                 &trans           &trans  &trans    &trans  &trans    &trans
             >;
         };
     };
