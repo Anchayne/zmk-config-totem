@@ -19,18 +19,43 @@
 
         Esc {
             timeout-ms = <50>;
-            key-positions = <0 1 2>;
+            key-positions = <0 1 2 3>;
             bindings = <&kp ESC>;
         };
 
         Enter {
             bindings = <&kp ENTER>;
-            key-positions = <28 29 30>;
+            key-positions = <28 29 30 27>;
         };
 
         Tab {
             bindings = <&kp TAB>;
-            key-positions = <21 23 22>;
+            key-positions = <1 2 3>;
+        };
+
+        S_Tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <1 2 0>;
+        };
+
+        C_Backspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <6 8 7>;
+        };
+
+        C_DEL {
+            bindings = <&kp LC(DEL)>;
+            key-positions = <7 8 9>;
+        };
+
+        S_Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <28 29 30>;
+        };
+
+        undersc {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <25 26>;
         };
     };
 
@@ -56,19 +81,19 @@
 
         alpha {
             bindings = <
-        &kp Q  &kp W  &kp U  &kp P      &kp X           &kp J           &kp M        &kp S  &kp K  &kp SQT
-        &kp A  &kp R  &kp I  &kp N      &kp B           &kp G           &kp T        &kp H  &kp O  &kp E
-&trans  &kp X  &kp L  &kp Y  &kp C      &kp COMMA       &kp PERIOD      &kp D        &kp F  &kp V  &kp MINUS  &trans
-                      &to 1  &kp SPACE  &kp LC(BSPC)    &kp LEFT_SHIFT  &key_repeat  &to 0
+        &kp Z  &kp W  &kp Y  &kp P      &kp X        &kp J           &kp D        &kp S          &kp K  &kp SQT
+        &kp A  &kp R  &kp I  &kp N      &kp B        &kp G           &kp T        &kp H          &kp O  &kp E
+&trans  &kp Q  &kp L  &kp U  &kp C      &kp COMMA    &kp PERIOD      &kp M        &kp F          &kp V  &kp MINUS  &trans
+                      &to 1  &kp SPACE  &to 0        &kp LEFT_SHIFT  &key_repeat  &kp BACKSPACE
             >;
         };
 
         NumSymb {
             bindings = <
-        &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans               &kp DOLLAR       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMI      &kp PIPE
-        &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD           &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &kp EQUAL
-&trans  &trans  &kp N7        &kp N8        &kp N9        &trans               &kp HASH         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION  &kp AT_SIGN  &trans
-                              &to 3         &kp SPACE     &kp LC(BACKSPACE)    &mo 2            &kp UNDERSCORE        &to 0
+        &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp DOLLAR       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMI      &kp PIPE
+        &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &kp EQUAL
+&trans  &trans  &kp N7        &kp N8        &kp N9        &trans        &kp HASH         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION  &kp AT_SIGN  &trans
+                              &to 3         &kp SPACE     &to 0         &mo 2            &kp UNDERSCORE        &kp BACKSPACE
             >;
         };
 
@@ -83,9 +108,9 @@
 
         NavAux {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans          &kp HOME      &kp PG_UP     &kp END        &kp PG_DN
-        &trans  &trans  &trans  &trans  &trans    &trans          &kp LEFT      &kp UP        &kp RIGHT      &kp DOWN
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp LC(DOWN)  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans          &kp HOME      &kp PG_UP   &kp END        &kp PG_DN
+        &trans  &trans  &trans  &trans  &trans    &trans          &kp LEFT      &kp UP      &kp RIGHT      &kp DOWN
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &kp LC(DOWN)  &trans
                         &trans  &trans  &trans    &kp LEFT_SHIFT  &trans        &trans
             >;
         };
