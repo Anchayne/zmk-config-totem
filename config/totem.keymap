@@ -83,7 +83,7 @@
             bindings = <
         &kp J  &kp W  &kp F  &kp Y      &kp Q        &kp X           &kp P          &kp G        &kp M  &kp SQT
         &kp A  &kp I  &kp R  &kp O      &kp K        &kp B           &kp N          &kp T        &kp H  &kp E
-&trans  &kp Q  &kp U  &kp S  &kp V      &kp COMMA    &kp PERIOD      &kp C          &kp D        &kp L  &kp MINUS  &trans
+&trans  &kp Z  &kp U  &kp S  &kp V      &kp COMMA    &kp PERIOD      &kp C          &kp D        &kp L  &kp MINUS  &trans
                       &to 1  &kp SPACE  &to 0        &kp LEFT_SHIFT  &kp BACKSPACE  &key_repeat
             >;
         };
