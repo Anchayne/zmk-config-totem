@@ -11,7 +11,6 @@
     global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
-    bindings = <&mo>, <&sl>;
 };
 
 / {
@@ -95,27 +94,27 @@
 
         Alpha {
             bindings = <
-        &kp J  &kp W  &kp F      &kp Y      &kp Q        &kp X       &kp P          &kp G        &kp M  &kp SQT
-        &kp A  &kp I  &kp R      &kp O      &kp K        &kp B       &kp N          &kp T        &kp H  &kp E
-&trans  &kp Z  &kp U  &kp S      &kp V      &kp COMMA    &kp PERIOD  &kp C          &kp D        &kp L  &kp QUESTION  &trans
-                      &mosl 2 2  &kp SPACE  &mosl 4 4    &mosl 1 1   &kp BACKSPACE  &key_repeat
+        &kp SQT       &kp W  &kp F      &kp Y      &kp Q         &kp Z      &kp P          &kp G        &kp M  &kp J
+        &kp A         &kp I  &kp R      &kp O      &kp K         &kp B      &kp N          &kp T        &kp H  &kp E
+&trans  &kp QUESTION  &kp U  &kp S      &kp V      &kp PERIOD    &kp COMMA  &kp C          &kp D        &kp L  &kp X  &trans
+                             &mosl 2 2  &kp SPACE  &mosl 4 4     &mosl 1 1  &kp BACKSPACE  &key_repeat
             >;
         };
 
         AlphaSHIFT {
             bindings = <
-        &kp LS(J)  &kp LS(W)  &kp LS(F)  &kp LS(Y)  &kp LS(Q)    &kp LS(X)   &kp LS(P)  &kp LS(G)  &kp LS(M)  &kp SQT
-        &kp LS(A)  &kp LS(I)  &kp LS(R)  &kp LS(O)  &kp LS(K)    &kp LS(B)   &kp LS(N)  &kp LS(T)  &kp LS(H)  &kp LS(E)
-&trans  &kp LS(Z)  &kp LS(U)  &kp LS(S)  &kp LS(V)  &kp COMMA    &kp PERIOD  &kp LS(C)  &kp LS(D)  &kp LS(L)  &kp EXCLAMATION  &trans
-                              &trans     &trans     &trans       &trans      &trans     &trans
+        &kp SQT          &kp LS(W)  &kp LS(F)  &kp LS(Y)  &kp LS(Q)     &kp LS(Z)  &kp LS(P)  &kp LS(G)  &kp LS(M)  &kp LS(J)
+        &kp LS(A)        &kp LS(I)  &kp LS(R)  &kp LS(O)  &kp LS(K)     &kp LS(B)  &kp LS(N)  &kp LS(T)  &kp LS(H)  &kp LS(E)
+&trans  &kp EXCLAMATION  &kp LS(U)  &kp LS(S)  &kp LS(V)  &kp PERIOD    &kp COMMA  &kp LS(C)  &kp LS(D)  &kp LS(L)  &kp LS(X)  &trans
+                                    &trans     &trans     &trans        &trans     &trans     &trans
             >;
         };
 
         NumSymb {
             bindings = <
-        &kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOLLAR     &kp AT_SIGN      &kp PLUS              &kp ASTERISK           &kp SLASH         &kp DOUBLE_QUOTES
-        &kp N0     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD     &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON         &kp EQUAL
-&trans  &kp SLASH  &kp N7        &kp N8        &kp N9        &kp PERCENT    &kp HASH         &kp LESS_THAN         &kp MINUS              &kp GREATER_THAN  &kp CARET          &trans
+        &kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp AT_SIGN      &kp PLUS              &kp ASTERISK           &kp SLASH         &kp DOUBLE_QUOTES
+        &kp N0     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON         &kp EQUAL
+&trans  &kp CARET  &kp N7        &kp N8        &kp N9        &kp PERIOD     &kp COMMA        &kp LESS_THAN         &kp MINUS              &kp GREATER_THAN  &kp HASH           &trans
                                  &trans        &trans        &trans         &mosl 3 3        &trans                &trans
             >;
         };
@@ -140,10 +139,10 @@
 
         layer_5 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(HOME)      &kp LS(PG_UP)   &kp LS(END)        &kp LS(PG_DN)
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(LEFT)      &kp LS(UP)      &kp RS(RIGHT)      &kp LS(DOWN)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(LC(LEFT))  &kp LC(LS(UP))  &kp LS(LC(RIGHT))  &kp LS(LC(DOWN))  &trans
+                        &trans  &trans  &trans    &trans  &trans            &trans
             >;
         };
     };
