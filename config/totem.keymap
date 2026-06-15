@@ -140,10 +140,10 @@
 
         layer_5 {
             bindings = <
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans    &trans  &kp LS(HOME)      &kp LS(PG_UP)   &kp LS(END)        &kp LS(PG_DN)
-        &trans      &trans        &trans        &trans  &trans    &trans  &kp LS(LEFT)      &kp LS(UP)      &kp RS(RIGHT)      &kp LS(DOWN)
-&trans  &trans      &trans        &trans        &trans  &trans    &trans  &kp LS(LC(LEFT))  &kp LC(LS(UP))  &kp LS(LC(RIGHT))  &kp LS(LC(DOWN))  &trans
-                                  &trans        &trans  &trans    &trans  &trans            &trans
+        &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans    &trans  &kp LS(HOME)      &kp LS(PG_UP)   &kp LS(END)        &kp LS(PG_DN)
+        &trans          &trans        &trans        &trans  &trans    &trans  &kp LS(LEFT)      &kp LS(UP)      &kp RS(RIGHT)      &kp LS(DOWN)
+&trans  &trans          &trans        &trans        &trans  &trans    &trans  &kp LS(LC(LEFT))  &kp LC(LS(UP))  &kp LS(LC(RIGHT))  &kp LS(LC(DOWN))  &trans
+                                      &trans        &trans  &trans    &trans  &trans            &trans
             >;
         };
     };
