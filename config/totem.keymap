@@ -151,10 +151,10 @@
 
         MedNav {
             bindings = <
-        &trans     &kp C_STOP    &kp C_NEXT         &kp K_PREVIOUS   &trans    &trans     &kp HOME      &kp PG_UP   &kp END        &kp PG_DN
-        &trans     &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans    &trans     &kp LEFT      &kp UP      &kp RIGHT      &kp DOWN
-&trans  &sk LCTRL  &sk LEFT_WIN  &sk LEFT_ALT       &sk LEFT_SHIFT   &trans    &trans     &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &kp LC(DOWN)  &trans
-                                 &trans             &trans           &trans    &mosl 5 5  &trans        &trans
+        &trans     &kp C_STOP    &kp C_NEXT         &kp K_PREVIOUS   &kp BACKSPACE    &trans     &kp HOME      &kp PG_UP   &kp END        &kp PG_DN
+        &trans     &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp ENTER        &trans     &kp LEFT      &kp UP      &kp RIGHT      &kp DOWN
+&trans  &sk LCTRL  &sk LEFT_WIN  &sk LEFT_ALT       &sk LEFT_SHIFT   &kp DELETE       &trans     &kp LC(LEFT)  &kp LC(UP)  &kp LC(RIGHT)  &kp LC(DOWN)  &trans
+                                 &trans             &trans           &trans           &mosl 5 5  &trans        &trans
             >;
         };
 
